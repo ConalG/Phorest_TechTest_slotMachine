@@ -7,7 +7,19 @@ table {
   }
   
 td {
-    border: 4px solid #8c6b48;
+    border: 4px solid #f86060;
     width: 250px;
     height: 250px;
   }
+.c0{
+    background-color: black;
+}
+.c01{
+    background-color: white ;
+}
+.c2{
+    background-color: green;
+}
+.c3{
+    background-color: yellow;
+}
