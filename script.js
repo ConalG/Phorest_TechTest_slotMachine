@@ -45,12 +45,12 @@ const playGame = () =>{
     updateJackpot();
     
     if(num1 == num2 && num2 == num3 && num3 == num4){
-        return result = true;
         credits += jackpot;
         jackpot = 0;
-    }
+        return result = true;
+     }
     else{
-        return result = false
+        return result = false;
     }
 }
 
