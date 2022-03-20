@@ -9,29 +9,22 @@
      <header class="center">
          <h1>Match All Four to Win!</h1>
      </header>
-     <div class="center">
-        <h3>Credits: <span id="money">100</span></h3>
-        <h2>Jackpot: <span id="prize">0</span></h2>
-     </div>
-     <div class="center">
-         <span id="result"></span>
-     </div>
-     <table class="center">
-         <tbody>
-              <tr>
-                <td id="slot1" class="c0">
-                </td>
-                <td id="slot2" class="c0">
-                </td>
-                <td id="slot3" class="c0">
-                </td>
-                <td id="slot4" class="c0">
-                </td>
-              </tr>
-         </tbody>
-     </table>
-     <div class="center">
-         <button id="play" onclick="spinning();">Spin</button>
-     </div>
+     <div class="machine">
+        <div class="display">
+            <span id="result">We have given you 100 credits on the house!</span>
+        </div>
+        <div class="center" id="slotbody">
+                <div id="slot1" class="c0"></div>
+                <div id="slot2" class="c0"></div>
+                <div id="slot3" class="c0"></div>
+                <div id="slot4" class="c0"></div>
+        </div>
+        <div class="center">
+            <button class="screen">Credits: <span id="money">100</span></button>
+            <button id="play" onclick="spinning();">Add 100 Credits</button>
+            <button id="play" onclick="spinning();">Spin</button>
+            <button class="screen">Jackpot: <span id="prize">0</span></button>
+        </div>
+    </div>
  </body>   
 </html>
