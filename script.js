@@ -1,35 +1,40 @@
 let credits = 100;
 let jackpot = 0;
-let result = false;
-
-
-//Genertate Random Number
-const generateRandomNumber = () =>{
-    return Math.floor(Math.random() * 4);
-  }
-
+let doing = false;
+ 
 const randomInt = (min, max)=>{
 	return Math.floor((Math.random() * (max-min+1)) + min);
 }
 
-//Get Element ID
 const getElement = (id) =>{
     return document.getElementById(id);
 }
-//Update Display for credits
-const updateCredits = () =>{
-    const money = getElement('money');
+
+const creditBalance = () =>{
+    let resultBox = getElement("result");
     const value = credits;
-    money.innerHTML = `${value}`;
+    resultBox.innerHTML = `Your Balance is: ${value} Credits`;
 }
-//Update Display for Jackpot
-const updateJackpot = () =>{
-    const prize = getElement('prize');
+
+const currentJackpot = () =>{
+    let resultBox = getElement("result");
     const value = jackpot;
-    prize.innerHTML = `${value}`;
+    resultBox.innerHTML = `Current Jackpot is: ${value} Credits`;
 }
-//Main Functionality of Game
+
+const add100Credits = () =>{
+    let resultBox = getElement("result");
+    credits += 100;
+    resultBox.innerHTML = `100 Credits Added. Balance is now ${credits} Credits`;
+}
+
 const playGame = () =>{
+    if(doing){return null;}
+    doing = true;
+
+    credits -= 10
+    jackpot += 10
+
     let slot1Number = randomInt(5,10);
     let slot2Number = randomInt(10,15);
     let slot3Number = randomInt(15,20);
@@ -95,31 +100,13 @@ const playGame = () =>{
 		}
         slot4.className = "c"+(parseInt(slot4.className.substring(1))+1)
     }
+    
     setspinslot1 = setInterval(slot1Spin, 150);
     setspinslot2 = setInterval(slot2Spin, 150);
     setspinslot3 = setInterval(slot3Spin, 150);
     setspinslot4 = setInterval(slot4Spin, 150);
-    
-    updateCredits();
-    updateJackpot();
-
 }
 
-
-const spinning = () =>{
-    let resultBox = getElement("result")
-    if(credits >= 10){
-        credits -= 10
-        jackpot += 10
-        playGame();
-    }
-    else{
-        resultBox.innerHTML="Not Enough Credits"
-    }
-
-}
-
-//Gathers result of Game 
 const getresult = () =>{
     let slot1 = getElement(`slot1`).className;
     let slot2 = getElement(`slot2`).className;
@@ -128,14 +115,24 @@ const getresult = () =>{
     let resultBox = getElement(`result`);
     
     if(slot1 == slot2 && slot2 == slot3 && slot3 == slot4){
-        resultBox.innerHTML="Congratulations you have won the Jackpot"
+        resultBox.innerHTML=`Congratulations you have won the Jackpot: ${jackpot} Credits!` 
         credits += jackpot
         jackpot = 0
     }
     else{
         resultBox.innerHTML="Better luck next time!"
     }
-    
+    doing = false
+}
+
+const spin = () =>{
+    let resultBox = getElement("result")
+    if(credits >= 10){
+        playGame();
+    }
+    else{
+        resultBox.innerHTML="Not Enough Credits"
+    }
 }
 
 

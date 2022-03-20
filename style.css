@@ -1,3 +1,10 @@
+@font-face{
+	font-family: 'displayfont';
+	src: url(fonts/slkscr.ttf) format('woff2');
+}
+body{
+	background-color: green;
+}
 .center{
     text-align: center;
 } 
@@ -21,8 +28,9 @@
 	padding-bottom: 25px;
 	border-radius: 25px;
 	background-color: #ff0000;
-	color: #FFFFFF;
-	font-size: 25px;
+	color: #000000;
+	font-size: 20px;
+	font-family: fantasy;
 }
 .screen{
     width: 190px;
@@ -32,9 +40,10 @@
 	padding-top: 25px;
 	padding-bottom: 25px;
 	border-radius: 25px;
-	background-color: #000000;
-	color: #eeff00;
-	font-size: 25px;
+	background-color: #ff7300;
+	color: #000000;
+	font-size: 20px;
+	font-family: fantasy;
 }
 .balance{
     margin-left: 100px;
@@ -49,6 +58,7 @@
 	font-size: 15px;
     border-style: inset;
     height: 25px;
+	font-family: displayfont;
 }
 .display{
     margin-left: 100px;
@@ -62,10 +72,13 @@
 	color: #eeff00;
 	font-size: 25px;
     border-style: inset;
+	font-family: displayfont;
 }
 
 .machine{
-    border-radius: 5px;
+	border-style: solid;
+	border-color: #000000;
+    border-radius: 50px;
 	background-color: darkgray;
 	margin-top: 30px;
 	padding-top: 20px;

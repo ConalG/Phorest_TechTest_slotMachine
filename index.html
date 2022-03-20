@@ -7,23 +7,23 @@
  </head>
  <body>
      <header class="center">
-         <h1>Match All Four to Win!</h1>
+        <h1>Match All Four to Win!</h1>
      </header>
      <div class="machine">
         <div class="display">
             <span id="result">We have given you 100 credits on the house!</span>
         </div>
         <div class="center" id="slotbody">
-                <div id="slot1" class="c0"></div>
-                <div id="slot2" class="c0"></div>
-                <div id="slot3" class="c0"></div>
-                <div id="slot4" class="c0"></div>
+            <div id="slot1" class="c0"></div>
+            <div id="slot2" class="c0"></div>
+            <div id="slot3" class="c0"></div>
+            <div id="slot4" class="c0"></div>
         </div>
         <div class="center">
-            <button class="screen">Credits: <span id="money">100</span></button>
-            <button id="play" onclick="spinning();">Add 100 Credits</button>
-            <button id="play" onclick="spinning();">Spin</button>
-            <button class="screen">Jackpot: <span id="prize">0</span></button>
+            <button class="screen" onclick="creditBalance()">Credit Balance</button>
+            <button class="screen" onclick="add100Credits();">Add 100 Credits</button>
+            <button id="play" onclick="spin();">Spin</button>
+            <button class="screen" onclick="currentJackpot()">Current Jackpot</button>
         </div>
     </div>
  </body>   
