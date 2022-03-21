@@ -17,7 +17,7 @@
     border-color: darkgray;
 }
 #play{
-    width: 190px;
+    width: 290px;
     margin-top: 25px;
     margin-left: 25px;
     margin-right: 25px;
@@ -100,12 +100,4 @@
 .c4{
     background-color: yellow;
 }
-input{
-    height: 50px;
-    background-color: #000000;
-    color: #eeff00;
-}
-.tab{
-    display: inline-block;
-    margin: 40px;
-}
+

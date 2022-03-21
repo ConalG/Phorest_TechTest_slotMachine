@@ -28,6 +28,12 @@ const add100Credits = () =>{
     resultBox.innerHTML = `100 Credits Added.<br>Balance is now ${credits} Credits`;
 }
 
+const payout = () =>{
+    let resultBox = getElement("result");
+    resultBox.innerHTML = `You have received as a payout:<br> ${credits} Credits`;
+    credits = 0;
+}
+
 const spinSlots = (slotNumber) => {
     let slot = getElement(slotNumber);
     if(slot.className=='c4'){
