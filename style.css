@@ -2,9 +2,6 @@
 	font-family: 'displayfont';
 	src: url(fonts/slkscr.ttf) format('woff2');
 }
-body{
-	background-color: green;
-}
 .center{
     text-align: center;
 } 
@@ -73,6 +70,7 @@ body{
 	font-size: 25px;
     border-style: inset;
 	font-family: displayfont;
+	height: 50px;
 }
 
 .machine{
