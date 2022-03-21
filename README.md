@@ -64,7 +64,8 @@ all their credits from the machine.
 
 ## Installation
 - node v16.13.0
-- npm v16.13.0
+- npm v8.1.0
+
 **Cypress**
 *  To initialize new or existing npm package 
 ```bash
@@ -74,7 +75,7 @@ npm init
 ```bash
 npm install cypress --save-dev
 ```
-To open cypress window use:
+* To open cypress window use:
 ```bash
 npx cypress open 
 ```
@@ -96,4 +97,29 @@ playGame.test.js
 
 ## Testing
 
+* To open cypress window use:
+```bash
+npx cypress open 
+```
+
+* Run via:
+playGame.test.js
+
+### Expected Outcome
+
+
+
+https://user-images.githubusercontent.com/14904030/159361388-2a3d42a6-8eac-4d97-8a38-37910565e092.mp4
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Future Steps
+
+* Impletment unit testing
+* Improve UX\UI
+* Impletment a framework
+* Run within a docker instance
+* Explore Solution 2 by implmenting backend API
+* Look into true random
 <p align="right">(<a href="#top">back to top</a>)</p>
