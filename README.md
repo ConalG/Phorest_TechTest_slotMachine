@@ -1,5 +1,8 @@
 # Phorest TechTest SlotMachine 
-Graduate Programme Technical Challenge for Phorest<br><br>
+Graduate Programme Technical Challenge for Phorest
+<br>
+Live site: https://conalg.github.io/Phorest_TechTest_slotMachine/
+<br>
 By Conal Glynnmartin
 
 ## ToDo
@@ -40,6 +43,15 @@ Success Criteria:
 - Automated tests
 - The path to your solution, please share with us your solution on Github with the
 history of your steps.
+## About Project
+
+I have chosen to complete solution 1 of this technical challenge. The user starts the game with 100 credits. 
+Each spin costs 10 credits, these get added to the jackpot before each spin has started. After the spin has complete
+the result of the game is displayed on the display screen above the slots. The user has the ability display their current
+credits and current jackpot at any time with the labelled buttons. If the jackpot is won, it gets automatically added to the
+user’s credits. Once the user has run out of credits, they will be unable to play and a no credit warning will be displayed.
+The user can at any time add 100 credits to the machine if they wish to do so. Once finished playing the user can pay-out
+all their credits from the machine.
 
 ### Built With
 
@@ -59,5 +71,9 @@ history of your steps.
 - [x] Add Jackpot to machince
 - [x] Add Jackpot to balance after the user has won
 - [x] Test machince
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Testing
 
 <p align="right">(<a href="#top">back to top</a>)</p>

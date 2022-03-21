@@ -31,7 +31,7 @@ describe('Play Game', () => {
 
     });
 
-    it('Play until no credits',() =>{
+    it('Play Until No Credits',() =>{
         for( let i = 0; i < 10; i ++){
             cy.get('button#play').click();
             cy.get('span#result').invoke('text').then((text) => {
@@ -64,7 +64,7 @@ describe('Play Game', () => {
        
     });
 
-    it('CurrentJackpot',() => {
+    it('Current Jackpot',() => {
         cy.get('button#checkJackpot').click();
         
         cy.get('span#result').contains('Current Jackpot is:');
