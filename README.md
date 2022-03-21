@@ -1,8 +1,8 @@
 # Phorest TechTest SlotMachine 
-Graduate Programme Technical Challenge for Phorest
-<br>
-Live site: https://conalg.github.io/Phorest_TechTest_slotMachine/
-<br>
+Graduate Programme Technical Challenge for Phorest<br>
+
+Live site: https://conalg.github.io/Phorest_TechTest_slotMachine/<br>
+
 By Conal Glynnmartin
 
 ## ToDo
@@ -61,6 +61,26 @@ all their credits from the machine.
 * Cypress
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+## Installation
+- node v16.13.0
+- npm v16.13.0
+**Cypress**
+*  To initialize new or existing npm package 
+```bash
+npm init
+```
+* To install cypress:
+```bash
+npm install cypress --save-dev
+```
+To open cypress window use:
+```bash
+npx cypress open 
+```
+
+* Run via:
+playGame.test.js
 
 ## Roadmap
 
