@@ -60,27 +60,21 @@ describe('Play Game', () => {
     it('Check Balance',() => {
         cy.get('button#balance').click()
         
-        cy.get('span#result').invoke('text').then((text) => {
-            expect(text).should('incude', 'Your Balance is:')
-        })
+        cy.get('span#result').contains('Your Balance is:')
        
     })
 
     it('CurrentJackpot',() => {
         cy.get('button#checkJackpot').click()
         
-        cy.get('span#result').invoke('text').then((text) => {
-            expect(text).should('incude', 'Current Jackpot is:')
-        })
+        cy.get('span#result').contains('Current Jackpot is:')
        
     })
 
     it('Add 100 Credits',() => {
         cy.get('button#add').click()
         
-        cy.get('span#result').invoke('text').then((text) => {
-            expect(text).should('incude', '100 Credits Added')
-        })
+        cy.get('span#result').contains('100 Credits Added')
        
     })
     
